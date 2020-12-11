@@ -1,4 +1,4 @@
-let url = 'http://localhost:3000';
+let url = 'https://url-shotener-sukriti.herokuapp.com';
 
 function onLoad(){
     fetch(url + `/get_count`, {

@@ -1,4 +1,4 @@
-let url = "http://localhost:3000"
+let url = "https://url-shotener-sukriti.herokuapp.com"
 let id = ""
 function onLoad(){
     let resetURL = new URL(window.location.href)
