@@ -1,5 +1,4 @@
-// let url = "https://password-reset-functionality.herokuapp.com"
-let url = "http://localhost:3000"
+let url = "https://url-shotener-sukriti.herokuapp.com"
 
 function onLoad() {
     let resetURL = new URL(window.location.href)

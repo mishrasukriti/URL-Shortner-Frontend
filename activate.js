@@ -36,22 +36,11 @@ function onLoad(){
                 alertDiv.innerHTML = "<strong> Failure. </strong>" + data.message + ". Activation failed!! Please try registering again.";
                 console.log("User Activation Failed");
                 deleteAlert(alertDiv);
-                // window.location.href = process.env.baseURL+ "activation.html";
                 document.getElementById("activationDiv").append(alertDiv);
             }
         })
         .catch((err)=>{
-            // document.getElementById("activationStatusDiv").innerHTML = '<strong><h3 class="d-flex justify-content-center">Activation Failed</h3></strong>';
-            // let alertDiv = document.createElement('alert');
-            // alertDiv.setAttribute("role","alert" );
-            // alertDiv.setAttribute("id","alertDiv" );
-
-            // alertDiv.setAttribute("class","alert alert-danger" );
-            // alertDiv.innerHTML = "<strong> Failure! </strong>" + ". Activation failed!! Please try registering again.";
             console.log("User Activation Failed");
-            // deleteAlert(alertDiv);
-            // // window.location.href = process.env.baseURL+ "activation.html";
-            // document.getElementById("activationDiv").append(alertDiv);
         })
 }
 
