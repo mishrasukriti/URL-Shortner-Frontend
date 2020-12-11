@@ -1,4 +1,4 @@
-let url = "http://localhost:3000";
+let url = "https://url-shotener-sukriti.herokuapp.com";
 /**
  * Function to convert long URL to short URL and update the same in short URL textbox
  */
