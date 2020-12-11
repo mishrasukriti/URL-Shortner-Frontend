@@ -28,7 +28,7 @@ function onLoad(){
                 document.getElementById("activationDiv").append(alertDiv);
                 document.getElementById("activationStatusDiv").innerText = "Activated Successfully";
 
-                window.location.href = "http://127.0.0.1:5500/frontend/index.html";
+                window.location.href = "http://127.0.0.1:5500/index.html";
             } 
             else {
                 document.getElementById("activationStatusDiv").innerText = "Activation Failed";
@@ -48,7 +48,7 @@ function onLoad(){
 
             // alertDiv.setAttribute("class","alert alert-danger" );
             // alertDiv.innerHTML = "<strong> Failure! </strong>" + ". Activation failed!! Please try registering again.";
-            // console.log("User Activation Failed");
+            console.log("User Activation Failed");
             // deleteAlert(alertDiv);
             // // window.location.href = process.env.baseURL+ "activation.html";
             // document.getElementById("activationDiv").append(alertDiv);

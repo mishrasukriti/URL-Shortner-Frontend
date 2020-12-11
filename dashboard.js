@@ -24,5 +24,5 @@ function onLoad(){
 onLoad();
 
 function startShortening() {
-    window.location.href = "http://127.0.0.1:5500/frontend/urlShortner.html";
+    window.location.href = "http://127.0.0.1:5500/urlShortner.html";
 }
