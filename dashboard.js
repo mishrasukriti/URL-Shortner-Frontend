@@ -24,5 +24,5 @@ function onLoad(){
 onLoad();
 
 function startShortening() {
-    window.location.href = "http://127.0.0.1:5500/urlShortner.html";
+    window.location.href = "https://sukriti-url-shortner.netlify.app/urlShortner.html";
 }

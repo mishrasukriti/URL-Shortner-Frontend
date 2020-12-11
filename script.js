@@ -52,7 +52,7 @@ function onLogIn() {
             alertDiv.setAttribute("role","alert" );
             alertDiv.setAttribute("id","alertDiv" );
             if(data.message === "Login success"){
-                window.location.href =  "http://127.0.0.1:5500/urlShortner.html";
+                window.location.href =  "https://sukriti-url-shortner.netlify.app/urlShortner.html";
             }
             else if(data.message === "Account not activated"){
                 alertDiv.setAttribute("class","alert alert-danger" );
