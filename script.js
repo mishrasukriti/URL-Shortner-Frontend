@@ -5,6 +5,9 @@ function onLoad() {
     let resetURL = new URL(window.location.href)
     console.log("shotenredURL is: " + resetURL);
     let hashId = resetURL.searchParams.get("id");
+    if(hashId === undefined || hashId === null || hashId ==='') {
+        return;
+    }
     fetch(url + `/hash/${hashId}`, {
         method: "GET",
         headers: {
@@ -16,15 +19,13 @@ function onLoad() {
             if (data.message === "Success"){
                 window.location.replace(data.longURL);
             }
-            else{
-                let indexPage = document.getElementById("indexPageId")
-                indexPage.setAttribute("class", "login-page")
+            else {
+                console.log("Caught error while fetching longURL for corresponding shortURL Id");
             }
             
         })
         .catch((err)=>{
-            let indexPage = document.getElementById("indexPageId")
-            indexPage.setAttribute("class", "login-page")
+            console.log("Caught error while fetching longURL for corresponding shortURL Id");
         })
 }
 
@@ -51,7 +52,7 @@ function onLogIn() {
             alertDiv.setAttribute("role","alert" );
             alertDiv.setAttribute("id","alertDiv" );
             if(data.message === "Login success"){
-                window.location.href =  "http://127.0.0.1:5500/frontend/urlShortner.html";
+                window.location.href =  "http://127.0.0.1:5500/urlShortner.html";
             }
             else if(data.message === "Account not activated"){
                 alertDiv.setAttribute("class","alert alert-danger" );
