@@ -10,14 +10,14 @@ function onLoad(){
         .then((resp) => resp.json())
         .then((data) => {
             if (data.message === "Success"){
-                let pastOneDay = document.getElementById("pastOnedayId")
-                pastOneDay.innerText = data.oneDayCount
-                let pastThirtyDay = document.getElementById("pastThirtydayId")
-                pastThirtyDay.innerText = data.thirtyDayCount
+                let pastOneDay = document.getElementById("pastOnedayId");
+                pastOneDay.innerText = data.oneDayCount;
+                let pastThirtyDay = document.getElementById("pastThirtydayId");
+                pastThirtyDay.innerText = data.thirtyDayCount;
             }  
         })
         .catch((err)=>{
-            
+            console.log("err");
         })
 }
 

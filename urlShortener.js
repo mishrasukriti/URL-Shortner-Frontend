@@ -18,13 +18,11 @@ function shortenUrl() {
             let shortenUrlFormElement = document.getElementById("shortenURLFormId")
             let alertDiv = document.createElement("div")
             alertDiv.setAttribute("role", "alert")
-            // alertDiv.setAttribute("style", "margin-top: 50px")
             alertDiv.setAttribute("id", "urlShortenSuccessId")
             if (data.message === 'URL is shortened'){
                 alertDiv.setAttribute("class", "alert alert-success");
                 alertDiv.innerHTML = "<strong>URL Shortened Successfully!</strong> " + data.message
                 let shortenUrlTextBox = document.getElementById("shortUrlText");
-                console.log("shortened URL is: " + data.shortenedURL);
                 shortenUrlTextBox.innerHTML = data.shortenedURL;
                 shortenUrlTextBox.value = data.shortenedURL;
             } 
@@ -42,7 +40,6 @@ function shortenUrl() {
             let alertDiv = document.createElement("div")
             alertDiv.setAttribute("class", "alert alert-danger")
             alertDiv.setAttribute("role", "alert")
-            // alertDiv.setAttribute("style", "margin-top: 50px")
             alertDiv.setAttribute("id", "urlShortenFailureId")
             alertDiv.innerHTML = "<strong>Failure!</strong> Internal Server Error"
             colDiv2.appendChild(alertDiv)
