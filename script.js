@@ -192,7 +192,7 @@ function changePassword() {
             let alertDiv = document.createElement('alert');
             alertDiv.setAttribute("role","alert" );
             alertDiv.setAttribute("id","alertDiv" );
-            if(data.message === "Password Updated Successfully"){
+            if(data.message === "Password Changed Successfully"){
                 alertDiv.setAttribute("class","alert alert-success" );
                 alertDiv.innerHTML = "<strong> Success! </strong>" + data.message;
                 deleteAlert(alertDiv);
