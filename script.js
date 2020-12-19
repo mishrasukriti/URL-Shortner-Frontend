@@ -144,12 +144,12 @@ function sendPasswordResetLink(){
             let alertDiv = document.createElement('alert');
             alertDiv.setAttribute("role","alert" );
             alertDiv.setAttribute("id","alertDiv" );
-            if(data.message === "Verification mail is sent"){
+            if(data.message === "Verification mail sent"){
                 alertDiv.setAttribute("class","alert alert-success" );
                 alertDiv.innerHTML = "<strong> Success! </strong>" + data.message + "Please check your email";
                 deleteAlert(alertDiv);
             }
-            if(data.message === "User doesn't exist"){
+            if(data.message === "User is not registered"){
                 alertDiv.setAttribute("class","alert alert-danger" );
                 alertDiv.innerHTML = "<strong>Failure!</strong>" + data.message;
                 deleteAlert(alertDiv);
